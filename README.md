@@ -127,7 +127,7 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert.
 ## 👤 Kontakt
 
 Viorel Ghiurca
-- E-Mail: [contact@example.com](mailto:contact@example.com)
+- E-Mail: [v.ghiurca@icloud.com](mailto:v.ghiurca@icloud.com)
 - Website: [www.example.com](https://www.example.com)
 
 ## 🙏 Danksagung
