@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viorel Ghiurca | IHK geprüfter Fachinformatiker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">VG</div>
+            <ul class="nav__links">
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Erfahrung</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <div class="container">
+                <h1 class="hero__title">Viorel Ghiurca</h1>
+                <h2 class="hero__subtitle">IHK geprüfter Fachinformatiker</h2>
+                <p class="hero__description">
+                    Spezialisiert auf Programmierung, DevOps, Web Design, Projektmanagement 
+                    und KI-Entwicklung
+                </p>
+                <div class="hero__cta">
+                    <a href="#contact" class="btn btn--primary">Kontakt aufnehmen</a>
+                    <a href="#skills" class="btn btn--secondary">Meine Skills</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Entwicklung</h3>
+                        <ul>
+                            <li>Full-Stack Entwicklung</li>
+                            <li>KI & Machine Learning</li>
+                            <li>DevOps & CI/CD</li>
+                            <li>Web Design & UX</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Projektmanagement</h3>
+                        <ul>
+                            <li>Agile Methoden (Scrum)</li>
+                            <li>Klassisches PM</li>
+                            <li>Team Leadership</li>
+                            <li>Projektplanung</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Systemadministration</h3>
+                        <ul>
+                            <li>Windows Server</li>
+                            <li>Linux Systeme</li>
+                            <li>Netzwerke</li>
+                            <li>Cloud Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <div class="container">
+                <h2 class="section-title">Berufserfahrung</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Berufserfahrung</h3>
+                            <p class="timeline-date">3 Jahre im IT-Bereich</p>
+                            <ul>
+                                <li>Umfassende Erfahrung in Linux- und Windows-Systemadministration</li>
+                                <li>Hardware-Konfiguration und -Wartung</li>
+                                <li>Entwicklung in verschiedenen Programmiersprachen</li>
+                                <li>Systemintegration und Automatisierung</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>IHK Ausbildung</h3>
+                            <p class="timeline-date">Fachinformatiker für Anwendungsentwicklung</p>
+                            <ul>
+                                <li>Umfassende Ausbildung in modernen IT-Technologien</li>
+                                <li>Praktische Erfahrung in verschiedenen IT-Domänen</li>
+                                <li>Projektmanagement und Teamarbeit</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Kontakt</h2>
+                <div class="contact-content">
+                    <p class="contact-text">
+                        Interessiert an einer Zusammenarbeit? Lassen Sie uns sprechen!
+                    </p>
+                    <a href="mailto:ghiurca.viorel@icloud.com" class="btn btn--primary">E-Mail senden</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Viorel Ghiurca. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
