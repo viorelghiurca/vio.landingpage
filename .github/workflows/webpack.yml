@@ -1,0 +1,42 @@
+name: Webpack Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Caching-Strategie für node_modules
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    # Node.js Setup
+    - name: Node.js ${{ matrix.node-version }} verwenden
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    # Abhängigkeiten installieren
+    - name: Abhängigkeiten installieren
+      run: npm ci
+
+    # Build-Prozess
+    - name: Webpack Build ausführen
+      run: npm run build
+
+    # Build-Artefakte speichern
+    - name: Build-Artefakte speichern
+      uses: actions/upload-artifact@v4
+      with:
+        name: webpack-build
+        path: dist/
+        retention-days: 7 
