@@ -34,11 +34,11 @@ app.use(helmet({
 app.use(compression());
 
 // Serve static files
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../docs')));
 
 // Main route
 app.get('/', (_req: Request, res: Response): void => {
-    res.sendFile(path.join(__dirname, '../public', 'index.html'));
+    res.sendFile(path.join(__dirname, '../docs', 'index.html'));
 });
 
 // Error handling middleware

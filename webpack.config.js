@@ -17,7 +17,7 @@ module.exports = {
     },
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, 'public/js'),
+        path: path.resolve(__dirname, 'docs/js'),
     },
     devtool: 'source-map',
 }; 
