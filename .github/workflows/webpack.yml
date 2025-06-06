@@ -39,4 +39,11 @@ jobs:
       with:
         name: webpack-build
         path: dist/
-        retention-days: 7 
+        retention-days: 7
+
+    # Deploy to GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist 
