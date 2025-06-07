@@ -73,7 +73,7 @@ SSL_KEY_PATH=./certs/key.pem     # Pfad zum privaten Schlüssel
 
 ```
 vio.landingpage/
-├── public/
+├── docs/
 │   ├── css/
 │   │   └── style.css
 │   ├── js/
